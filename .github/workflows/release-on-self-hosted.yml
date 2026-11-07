@@ -1,6 +1,8 @@
 name: Auto Build nacos (Self-hosted)
 
 on:
+  schedule:
+    - cron: '12 16 * * *'
   workflow_dispatch:
 
 env:
