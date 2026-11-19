@@ -24,7 +24,7 @@ prepare()
     echo "📦 [Prepare] Setting up build environment..."
     
     git clone -b "${VERSION}" --depth 1 "https://github.com/${UPSTREAM_OWNER}/${UPSTREAM_REPO}" "${SRCS}/${VERSION}"
-    "${PATCHES}/patch.sh" "${SRCS}/${VERSION}"
+    "${PATCHES}/patch.sh" "${SRCS}/${VERSION}" "${VERSION}"
 
     echo "✅ [Prepare] Environment ready."
 }
